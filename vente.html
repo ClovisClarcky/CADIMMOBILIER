@@ -38,20 +38,21 @@
     </div>
   </nav>
 <!-- STart regular Navigation -->
-  <nav class="regularNav">
-    <div class="logo">
-      <h3>Mon logo</h3>
-    </div>
-    <div class="menu">
-    <ul>
-      <li><a href="#"></a>accueil</li>
-      <li><a href="#"></a>à vendre</li>
-      <li><a href="#"></a>à louer</li>
-      <li><a href="#"></a>agents immobiliers</li>
-      <li><a href="#"></a>contact</li>
-    </ul>
+<nav class="regularNav">
+  <div class="logo">
+    <a href="index.html"><img src="img/Logo-cadimmo.png"></a>
   </div>
-  </nav>
+  <div class="menu">
+  <button class="menuprincipal">Menu</button>
+      <div class="menuderoulant">
+         <a href="index.html">accueil</a>
+         <a href="vente.html">à vendre</a>
+         <a href="location.html">à louer</a>
+         <a href="agent.html">nos agents</a>
+         <a href="contact.html">contact</a>
+     </div>
+</div>
+</nav>
 </header>
 <!-- STart Main -->
 <main>
@@ -59,32 +60,46 @@
   <!-- STart section sell -->
   <section class="vente">
       <h2>propriétés à vendre</h2>
-      <div class="ArticleVente">
-          <article>
+          <article class="ArticleVente">
             <img src="img/headerImg.jpg" alt="maison de luxe header">
+            <div>
             <h3>rue du loup</h3>
             <h5>3 pièces</h5>
             <p>Paragraphe. Cliquez ici pour ajouter votre propre texte.
               Relatez ici votre parcours et présentez votre activité à vos visiteurs.</p>
-            <a href="agent.html"><input type="button" value="visiter"></a>
+
+              <div class="flexbox">
+                  <h4>900 000 €</h4>
+                  <a href="agent.html"><input type="button" value="visiter"></a>
+              </div>
+            </div>
           </article>
-          <article>
+          <article class="ArticleVente">
             <img src="img/headerImg.jpg" alt="maison de luxe header">
+            <div>
             <h3>chemin du prince</h3>
             <h5>3 pièces</h5>
             <p>Paragraphe. Cliquez ici pour ajouter votre propre texte.
               Relatez ici votre parcours et présentez votre activité à vos visiteurs.</p>
-            <a href="agent.html"><input type="button" value="visiter"></a>
+              <div class="flexbox">
+                  <h4>700 000 €</h4>
+                  <a href="agent.html"><input type="button" value="visiter"></a>
+              </div>
+            </div>
           </article>
-          <article>
+          <article class="ArticleVente">
             <img src="img/headerImg.jpg" alt="maison de luxe header">
+            <div>
             <h3>rue du roi</h3>
             <h5>6 pièces</h5>
             <p>Paragraphe. Cliquez ici pour ajouter votre propre texte.
               Relatez ici votre parcours et présentez votre activité à vos visiteurs.</p>
-            <a href="agent.html"><input type="button" value="visiter"></a>
+              <div class="flexbox">
+                  <h4>1 500 000 €</h4>
+                  <a href="agent.html"><input type="button" value="visiter"></a>
+              </div>
+            </div>
           </article>
-      </div>
   </section>
     <!-- end section sell -->
 
