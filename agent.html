@@ -37,21 +37,37 @@
       </a>
     </div>
   </nav>
-<!-- STart regular Navigation -->
-  <nav class="regularNav">
-    <div class="logo">
-      <h3>Mon logo</h3>
+  <!-- STart regular Navigation -->
+    <nav class="regularNav">
+      <div class="logo">
+        <a href="index.html"><img src="img/Logo-cadimmo.png"></a>
+      </div>
+      <div class="menu">
+      <button class="menuprincipal">Menu</button>
+          <div class="menuderoulant">
+             <a href="index.html">accueil</a>
+             <a href="vente.html">à vendre</a>
+             <a href="location.html">à louer</a>
+             <a href="agent.html">nos agents</a>
+             <a href="contact.html">contact</a>
+         </div>
     </div>
-    <div class="menu">
-    <ul>
-      <li><a href="#"></a>accueil</li>
-      <li><a href="#"></a>à vendre</li>
-      <li><a href="#"></a>à louer</li>
-      <li><a href="#"></a>agents immobiliers</li>
-      <li><a href="#"></a>contact</li>
-    </ul>
-  </div>
-  </nav>
+    </nav>
+  <!-- STart Desktop Navigation -->
+    <nav class="desktopNav">
+      <div class="logo">
+        <a href="index.html"><img src="img/Logo-cadimmo.png"></a>
+      </div>
+          <ul>
+            <li><a href="index.html">accueil</a></li>
+            <li><a href="vente.html">à vendre</a></li>
+            <li><a href="location.html">à louer</a></li>
+            <li><a href="agent.html">nos agents</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </nav>
+
+  <!-- End Desktop Navigation -->
 </header>
 <!-- STart Main -->
 <main>
@@ -59,6 +75,7 @@
   <!-- STart section sell -->
   <section class="agent">
          <h2>nos agents</h2>
+         <div class="agentflexbox">
           <article class="Articleagent">
             <img src="img/agent1.jpg" alt="image agent 1">
             <h3>alex bradley</h3>
@@ -80,14 +97,15 @@
             <p>E-mail : info@cadimmobilier.fr</p>
             <p>Tél : 01 23 45 67 89</p>
           </article>
+        </div>
   </section>
     <!-- end section sell -->
-
 </main>
 
   <!-- Start Footer -->
 
 <footer>
+  <div class="footflexbox">
   <div class="infocontact">
     <h3>N'HÉSITEZ PAS À NOUS CONTACTER PAR E-MAIL OU PAR TÉLÉPHONE :</h3>
     <p>Tél : 01 23 45 67 89</p>
@@ -102,6 +120,7 @@
                <textarea id="subject" name="subject" placeholder="Saisir Message.."></textarea>
                <input type="submit" value="Envoyez">
    </form>
+  </div>
   </div>
   <h5>Copyright © 2018 , Tout droit réservé clovis Amonchi</h5>
 </footer>

@@ -150,22 +150,66 @@ nav img {
 
 
 
-.menuhamburger div {
+/* .menuhamburger div {
   width: 30px;
   height: 3px;
   background-color: #323644;
   margin: 5px 0;
-}
+} */
 
-.regularNav {
+.mobileNav, .desktopNav {
   display: none;
 }
 
-.mobileNav {
+/* .mobileNav {
   display: flex;
   justify-content: space-between;
   width: 95%;
   margin: auto;
+} */
+
+.regularNav {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+}
+
+.menu {
+position: relative;
+display: inline-block;
+}
+
+.menuprincipal {
+background-color: white;
+ color: #323644;
+ border: none;
+ cursor: pointer;
+ padding-top:0.5em;
+ padding-bottom:0.5em;
+ padding-right: 1em;
+ padding-left: 1em;
+ font-size: 1em;
+ border-bottom:1px solid #323644;
+ border-top:1px solid #323644;
+}
+
+.menuderoulant {
+display: none;
+position: absolute;
+background-color: #323644;
+min-width: 30px;
+z-index: 1;
+}
+.menuderoulant a {
+color: white;
+padding: 10px;
+display: block;
+text-align: center;
+}
+
+.menu:hover .menuderoulant {
+display: block;
 }
 
 /*End Navigation bar style*/
@@ -263,8 +307,9 @@ main h5 {
 }
 
 .ArticleVente, .ArticleLocation {
-  width: 90%;
+  width: 95%;
   margin: auto;
+  padding-bottom: 3em;
 }
 
 .location {
@@ -341,9 +386,10 @@ footer input[type=submit]:hover {
 ####### Start Vente Page Style #########
 */
 
-.flexbox {
+main .flexbox {
   display: flex;
   justify-content: space-between;
+  margin: auto;
   /* margin-bottom: 2em; */
 }
 
@@ -351,7 +397,7 @@ footer input[type=submit]:hover {
 
 
 /*
-####### End Agent Page Style #########
+####### End vente Page Style #########
 */
 
 
@@ -365,6 +411,7 @@ footer input[type=submit]:hover {
   background-color: #F0F0F0;
   padding-top: 0.5em;
   padding-bottom: 2.5em;
+  width: 100%;
 }
 
 .agent p {
@@ -372,11 +419,10 @@ footer input[type=submit]:hover {
 }
 
 .Articleagent {
-  width: 90%;
+  width: 95%;
   margin: auto;
   background-color: white;
   padding-bottom: 3.5em;
-  margin-top: 2.5em;
   text-align: center;
 }
 
@@ -410,7 +456,7 @@ footer input[type=submit]:hover {
 @media all and (min-width: 640px) {
   /*Template*/
   /*Header*/
-  .mobileNav {
+  .mobileNav, .desktopNav {
     display: none;
   }
 
@@ -427,8 +473,8 @@ footer input[type=submit]:hover {
 }
 
 .menuprincipal {
-   background-color: #323644;
-   color: white;
+  background-color: white;
+   color: #323644;
    border: none;
    cursor: pointer;
    padding-top:0.5em;
@@ -436,21 +482,19 @@ footer input[type=submit]:hover {
    padding-right: 1.5em;
    padding-left: 1.5em;
    font-size: 1.2em;
+   border-bottom:1px solid #323644;
+   border-top:1px solid #323644;
 }
-
-/* .menuprincipal {
-background-color: #ff4444;
-} */
 
 .menuderoulant {
 display: none;
 position: absolute;
-background-color: #769CCD;
+background-color: #323644;
 min-width: 50px;
 z-index: 1;
 }
 .menuderoulant a {
-color: #323644;
+color: white;
 padding: 15px;
 display: block;
 text-align: center;
@@ -488,18 +532,112 @@ height: 300px;
 margin-left: 1em;
 margin-right: 1em;
 }
-
+}
 /* End article content style*/
 
 
 
 
+/* Regular Computer responsive #############################################*/
 
+@media all and (min-width: 1024px) {
 
-@media all and (min-width: 1280px) {
-  article {
-    width: 30%;
+  .regularNav, .mobileNav {
+    display: none;
   }
+
+.desktopNav {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+}
+
+.desktopNav ul {
+  list-style-type: none;
+  display: flex;
+  margin-top: 0.5em;
+}
+
+.desktopNav ul a {
+  margin-left: 1.5em;
+  font-weight: bold;
+}
+
+.desktopNav a:hover {
+  text-decoration: underline;
+  color: #769CCD;
+}
+
+.headerImage img {
+  height: 700px;
+}
+
+
+.headerText {
+  position: absolute; /* Position the background text */
+  background-color: inherit;
+  opacity: 1;
+  width: 50%;
+  padding-bottom: 15em;
+  padding-left: 5em;
+}
+
+
+.headerText h1 {
+  font-size: 5em;
+  text-align: left;
+  color: #323644;
+  margin: 0;
+  resize: horizontal;
+  resize: vertical;
+  /* padding: 0.1em; */
+  /* font-weight: lighter; */
+}
+.vente, .location {
+padding-bottom: 3em;
+}
+
+.venteflexbox, .locationflexbox, .agentflexbox {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+}
+
+.ArticleVente, .ArticleLocation, .Articleagent {
+  display: inline-block;
+  width: 30%;
+  margin: auto;
+}
+
+.ArticleVente img {
+  width: 100%;
+  height: 200px;
+}
+
+.ArticleLocation img{
+  width: 100%;
+  height: 200px;
+}
+
+.footflexbox {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+}
+
+.form {
+  text-align: right;
+  width: 45%;
+}
+
+.infocontact {
+  text-align: left;
+  width: 45%;
+}
+
 }
 
 /* Container holding the image and the text
