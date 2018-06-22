@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6, p, a, li, input, textarea, button {
   color: #323644;
 }
 
-h1, h2, h3, a, li, input, button {
+h1, h2, h3, a, li, input, button, textarea {
   text-transform: uppercase;
 }
 
@@ -317,6 +317,9 @@ main h5 {
   padding-bottom: 0.2em;
 }
 
+
+
+
 /*End Main style*/
 
 /*Start Footer style###############################################*/
@@ -442,7 +445,96 @@ main .flexbox {
 ####### End Agent Page Style #########
 */
 
+/*
+####### Start Contact Page Style #########
+*/
+.contact {
+  background-color: #F0F0F0;
+  padding-top: 0.5em;
+  padding-bottom: 2.5em;
+  width: 100%;
+}
 
+.contact p {
+  text-align: center;
+}
+
+.Articlecontact {
+  width: 95%;
+  margin: auto;
+  background-color: white;
+  padding-bottom: 3.5em;
+  text-align: center;
+}
+
+.Articlecontact img {
+  /* height: 320px; */
+  margin-bottom: 1.5em;
+}
+
+.Articlecontact h4 {
+  margin: 1em;
+  font-size: 1em;
+  text-transform: capitalize;
+}
+
+.Articlecontact form {
+  width: 95%;
+  margin: auto;
+}
+
+
+.Articlecontact form input[type=text], input[type=email], textarea {
+  background-color: white;
+  color: #9396A2;
+  width: 100%;
+  /* Full width */
+  padding: 0.5em;
+  /* Some padding */
+  border: 1px solid #9396A2;
+  /* #9396A2 border */
+  /*    border-radius: 4px;  Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+.Articlecontact form input[type=submit] {
+  background-color: white;
+  color: #323644;
+  padding: 10px 25px;
+  border: 1px solid #9396A2;
+  margin-top: 0.5em;
+  /*  border-radius: 4px; */
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker #323644 color */
+
+.Articlecontact form input[type=submit]:hover {
+  background-color: #323644;
+  color: white;
+}
+
+.Articlecontact iframe {
+  width: 95%;
+  margin: auto;
+  height: 400px;
+}
+
+.Articlecontact h4 {
+  margin-top: 2em;
+}
+
+
+/*
+####### End Contact Page Style #########
+*/
 
 
 
@@ -538,6 +630,9 @@ margin-right: 1em;
 
 
 
+
+
+
 /* Regular Computer responsive #############################################*/
 
 @media all and (min-width: 1024px) {
@@ -598,7 +693,7 @@ margin-right: 1em;
 padding-bottom: 3em;
 }
 
-.venteflexbox, .locationflexbox, .agentflexbox {
+.venteflexbox, .locationflexbox, .agentflexbox, .contactflexbox {
   display: flex;
   justify-content: space-between;
   width: 95%;
@@ -613,13 +708,23 @@ padding-bottom: 3em;
 
 .ArticleVente img {
   width: 100%;
-  height: 200px;
+  height: 300px;
 }
 
 .ArticleLocation img{
   width: 100%;
-  height: 200px;
+  height: 300px;
 }
+
+.Articlecontact {
+  display: inline-block;
+  width: 45%;
+}
+
+.Articlecontact iframe {
+height: 700px;
+}
+
 
 .footflexbox {
   display: flex;
@@ -639,6 +744,7 @@ padding-bottom: 3em;
 }
 
 }
+
 
 /* Container holding the image and the text
 .container {
